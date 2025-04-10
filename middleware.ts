@@ -1,7 +1,7 @@
 import {auth} from "./auth";
 import {NextResponse} from "next/server";
 
-const PUBLIC_ROUTES = ['/admin/auth/signin', '/admin/auth/error'] as const;
+const PUBLIC_ROUTES = ['/admin/auth/signin', '/admin/auth/error', '/contact-us', '/', '/privacy-policy', '/services', '/terms-conditions', '/about-us'] as const;
 
 
 function matchesRoute(path: string, routePattern: string): boolean {
@@ -32,7 +32,7 @@ export default auth((req) => {
     const isPublicRoute = isPublicPath(pathname);
 
     if (isPublicRoute && isLoggedIn && pathname.startsWith('/auth')) {
-        const redirectTarget = '/dashboard';
+        const redirectTarget = '/admin/dashboard';
         return NextResponse.redirect(new URL(redirectTarget, nextUrl));
     }
 

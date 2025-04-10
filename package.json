@@ -6,7 +6,7 @@
     "generate": "npx prisma generate",
     "migrate": "npx prisma migrate dev",
     "seed": "npx prisma db seed",
-    "dev": "npm install && npm run generate && npm run migrate && npm run seed && next dev --turbopack",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

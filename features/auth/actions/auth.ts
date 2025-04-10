@@ -65,7 +65,7 @@ export async function authenticate(
         }
     }
 
-    redirect('/dashboard')
+    redirect('/admin/dashboard')
 }
 
 export const logout = async () => {
