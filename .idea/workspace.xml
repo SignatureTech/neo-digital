@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e23da0af-3bdb-4ab4-a214-72e081481fcf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/admin/(dashboard)/dashboard/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/admin/(dashboard)/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/admin/(dashboard)/services/[id]/edit/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/admin/(dashboard)/services/new/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/admin/(dashboard)/services/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/admin/auth/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/admin/auth/signin/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/app-sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/image-upload.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/nav-main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/nav-user.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tiptap-editor.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/auth/actions/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/auth/components/login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/auth/schema/login.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/services/actions/service-actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/services/components/service-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/services/components/services-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/services/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/use-mobile.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/prisma.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/session.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/sidebar-data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/scripts/seed-admin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/seed.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/dialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2vWcUOTZqgfGGJiuVcxylCXJ0lX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "panel",
+    "last_opened_file_path": "/Users/pankaj/Documents/Projects/neo-digital/app/admin/auth",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "pnpm",
+    "ts.external.directory.path": "/Users/pankaj/Documents/Projects/neo-digital/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/admin/auth" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/app/(admin)" />
+      <recent name="$PROJECT_DIR$/prisma" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e23da0af-3bdb-4ab4-a214-72e081481fcf" name="Changes" comment="" />
+      <created>1744264286241</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744264286241</updated>
+      <workItem from="1744264287530" duration="3769000" />
+      <workItem from="1744272268844" duration="1354000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
