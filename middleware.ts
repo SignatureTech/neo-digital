@@ -1,8 +1,7 @@
 import {auth} from "./auth";
 import {NextResponse} from "next/server";
 
-const PUBLIC_ROUTES = ['/admin/auth/signin', '/admin/auth/error', '/contact-us', '/', '/privacy-policy', '/services', '/terms-conditions', '/about-us'] as const;
-
+const PUBLIC_ROUTES = ['/admin/auth/signin', '/admin/auth/error'] as const;
 
 function matchesRoute(path: string, routePattern: string): boolean {
     if (path === routePattern) return true;
@@ -21,17 +20,20 @@ function isPublicPath(path: string): boolean {
     return PUBLIC_ROUTES.some(route => matchesRoute(path, route));
 }
 
-
 export default auth((req) => {
     const {nextUrl, auth} = req;
     const pathname = nextUrl.pathname;
+
+    if (!pathname.startsWith('/admin')) {
+        return NextResponse.next();
+    }
 
     const user = auth?.user;
     const isLoggedIn = !!user;
 
     const isPublicRoute = isPublicPath(pathname);
 
-    if (isPublicRoute && isLoggedIn && pathname.startsWith('/auth')) {
+    if (isPublicRoute && isLoggedIn && pathname.startsWith('/admin/auth')) {
         const redirectTarget = '/admin/dashboard';
         return NextResponse.redirect(new URL(redirectTarget, nextUrl));
     }
@@ -46,5 +48,6 @@ export default auth((req) => {
 
 export const config = {
     matcher: [
-        "/((?!_next/static|_next/image|favicon.ico|public/|api/(?!auth)).*)"],
+        '/admin/:path*',
+    ],
 };

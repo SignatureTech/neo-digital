@@ -6,10 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return <>
-
-        <div className="bg-[url(/footer-img.jpg)] bg-cover w-full flex-md:flex-row flex-col justify-around items-start p-5">
-
-
+        <div className="bg-[url(/images/footer-img.jpg)] bg-cover w-full flex-md:flex-row flex-col justify-around items-start p-5">
             <footer className="container m-auto text-white py-4">
                 <div className="mx-auto flex flex-col md:flex-row justify-between px-6">
                     <div className="text-center md:text-left mb-6 md:mb-0">
@@ -42,26 +39,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-
                 <div className="text-center text-sm text-gray-400 mt-6 border-t border-gray-700 pt-6">
                     ©2025 <span className="text-teal-400 font-semibold">NEO DIGITAL</span>. All rights reserved.
                 </div>
             </footer>
-
-
-
-
-
         </div>
-
-
-
-
-
-
-
-
-
 
     </>
 }

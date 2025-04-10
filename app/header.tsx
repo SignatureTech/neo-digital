@@ -39,7 +39,7 @@ const Header = () => {
 
         <h1 className="text-2xl font-bold">
           <Link href={"/"}>
-          <span className="text-teal-400">NEO</span> Digital
+            <span className="text-teal-400">NEO</span> Digital
           </Link>
         </h1>
 
@@ -47,7 +47,7 @@ const Header = () => {
         <nav className="hidden md:flex space-x-8">
         
         {navArr?.map((nav) => (
-          <Link href={nav?.route} className={`hover:text-teal-400 font-semibold relative ${pathname === nav?.route ? 'text-teal-400  after:block after:h-0.5 after:bg-teal-400 after:w-full after:scale-x-100 ': ""}`}>
+          <Link key={nav.id} href={nav?.route} className={`hover:text-teal-400 font-semibold relative ${pathname === nav?.route ? 'text-teal-400  after:block after:h-0.5 after:bg-teal-400 after:w-full after:scale-x-100 ': ""}`}>
             {nav?.name}
           </Link>
         ))}
