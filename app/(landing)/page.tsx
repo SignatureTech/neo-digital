@@ -1,38 +1,36 @@
 "use client";
-import Link from "next/link";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Image from "next/image";
 import TypingAnimation from "@/components/ui/typing-animation";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { AnimatedCard } from "@/components/ui/animated-card";
-import { BackgroundLines } from "@/components/ui/background-lines";
+import Link from "next/link";
 
 export default function Home() {
-  const typingTexts = ["Solutions", "Strategies", "Success"];
+  const typingTexts = ["Marketing", "Solutions", "Presence"];
 
   return (
     <div>
-      <BackgroundBeamsWithCollision className="bg-black">
+      <BackgroundBeamsWithCollision>
         <div className="max-w-7xl m-auto text-white py-35 px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-auto items-center justify-between">
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:text-6xl font-bold">
-                Our Expertise In Marketing{" "}
-                <TypingAnimation texts={typingTexts} />
+                Our Expertise In Digital <TypingAnimation texts={typingTexts} />
               </h1>
               <p className="text-gray-300 text-lg mt-3">
-                We Execute Your Ideas From Start to Finish. We Execute Your
-                Ideas From Start to Finish. We Execute Your Ideas From Start to
-                Finish. We Execute Your Ideas From Start to Finish. We Execute
-                Your Ideas From Start to Finish. We Execute Your Ideas From
-                Start to Finish. We Execute Your Ideas From Start to Finish.
+                We combine creativity with strategy to create campaigns that not
+                only look great — but perform even better. Let’s build something
+                your audience can’t ignore
               </p>
-              <button className="mt-6 relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none">
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00bba7_0%,#393BB2_50%,#7ccf00_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-10 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                  Explore
-                </span>
-              </button>
+              <Link href="/services">
+                <button className="mt-6 relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none">
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00bba7_0%,#393BB2_50%,#7ccf00_100%)]" />
+                  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-10 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                    Explore Our Services
+                  </span>
+                </button>
+              </Link>
             </div>
 
             <div
@@ -49,32 +47,30 @@ export default function Home() {
         </div>
       </BackgroundBeamsWithCollision>
 
-      <section className="bg-slate-950">
+      <section>
         <div className="max-w-7xl m-auto text-center py-25 px-4">
           <h1 className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-4xl">
-            Lorem Ipsum <span className="text-teal-400">Dummy Text</span> Demo
+            Solutions That Drive <span className="text-teal-400">Results</span>
           </h1>
           <div className="w-40 h-1 bg-teal-400 mx-auto my-4"></div>
           <p className="text-gray-300 text-lg">
-            Lorem Ipsum is simply dummy text of the printing
+            From SEO and social media to paid ads and content — we turn strategy
+            into success
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             <AnimatedCard
-              title="Author Card"
-              description="Card with Author avatar, complete name and time to read - most suitable for blogs."
+              title="Social media services"
               imageUrl="https://images.unsplash.com/photo-1544077960-604201fe74bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80"
             />
 
             <AnimatedCard
-              title="Author Card"
-              description="Card with Author avatar, complete name and time to read - most suitable for blogs."
+              title="Project management services"
               imageUrl="https://images.unsplash.com/photo-1544077960-604201fe74bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80"
             />
 
             <AnimatedCard
-              title="Author Card"
-              description="Card with Author avatar, complete name and time to read - most suitable for blogs."
+              title="Concept & design consultancy"
               imageUrl="https://images.unsplash.com/photo-1544077960-604201fe74bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80"
             />
           </div>
@@ -97,26 +93,30 @@ export default function Home() {
             STORY OF <span className="text-teal-400">NEO</span> DIGITAL
           </h4>
           <h2 className="mt-2 text-2xl font-bold md:text-4xl lg:text-4xl text-white">
-            We Have The <span className="text-teal-400">Best Partners</span>
+            We Build With the Best Minds in the{" "}
+            <span className="text-teal-400">Digital World</span>
           </h2>
           <p className="mt-4 text-base leading-relaxed md:text-lg text-white">
-            NEO DIGITAL is a team of talented developers committed to
-            affordable, quality, full-scope development services, A to Z!
+            At NEO DIGITAL, we’re more than a team — we’re a collective of
+            innovative thinkers, marketers, designers, and developers dedicated
+            to delivering high-impact digital solutions
           </p>
           <p className="mt-4 text-sm text-gray-300 md:text-base">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book.
+            Our partnerships are built on trust, results, and a shared vision
+            for excellence. With a track record of delivering smart, scalable
+            solutions — from websites to performance marketing — we’re the team
+            you can rely on from start to success.
           </p>
 
           <div className="mt-6">
-            <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none">
-              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00bba7_0%,#393BB2_50%,#7ccf00_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-10 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                Explore
-              </span>
-            </button>
+            <Link href="/contact-us">
+              <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00bba7_0%,#393BB2_50%,#7ccf00_100%)]" />
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-10 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                  Contact us
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -124,11 +124,12 @@ export default function Home() {
       <section className="bg-slate-950">
         <div className="max-w-7xl m-auto py-25 px-4">
           <h1 className="text-white text-4xl md:text-4xl font-extrabold text-center">
-            Lorem Ipsum <span className="text-teal-400">Dummy Text</span> Demo
+            How to Get Started with <span className="text-teal-400">NEO</span>{" "}
+            Digital
           </h1>
           <div className="w-40 h-1 bg-teal-400 mx-auto my-4"></div>
           <p className="text-gray-300 text-lg text-center">
-            Lorem Ipsum is simply dummy text of the printing
+            A Simple 3-Step Journey to Transform Your Digital Experience
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
@@ -141,13 +142,11 @@ export default function Home() {
                 </div>
               </div>
               <h2 className="text-2xl font-bold text-gray-900">
-                Lorem Ipsum Dummy Text
+                Book a Discovery Call
               </h2>
               <p className="mt-4 text-gray-700">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&#39;s standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                Start with a quick, no-obligation consultation. We&apos;ll learn
+                about your business, goals, and current marketing efforts.
               </p>
             </div>
 
@@ -160,13 +159,11 @@ export default function Home() {
                 </div>
               </div>
               <h2 className="text-2xl font-bold text-gray-900">
-                Lorem Ipsum Dummy Text
+                Receive a Tailored Strategy
               </h2>
               <p className="mt-4 text-gray-700">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&#39;s standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                Our team will develop a custom digital marketing plan aligned
+                with your objectives — clear, actionable, and results-focused.
               </p>
             </div>
 
@@ -179,13 +176,12 @@ export default function Home() {
                 </div>
               </div>
               <h2 className="text-2xl font-bold text-gray-900">
-                Lorem Ipsum Dummy Text
+                Execute & Optimize
               </h2>
               <p className="mt-4 text-gray-700">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&#39;s standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                Once approved, we’ll launch your campaign and continuously
+                monitor, analyze, and refine it to ensure maximum performance
+                and ROI.
               </p>
             </div>
           </div>

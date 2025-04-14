@@ -87,12 +87,14 @@ const Header = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <button className="relative inline-flex h-10 overflow-hidden rounded-full p-[1px] focus:outline-none">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00bba7_0%,#393BB2_50%,#7ccf00_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-10 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-              Explore
-            </span>
-          </button>
+          <Link href="/contact-us">
+            <button className="relative inline-flex h-10 overflow-hidden rounded-full p-[1px] focus:outline-none">
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00bba7_0%,#393BB2_50%,#7ccf00_100%)]" />
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-10 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                Enquiry Now
+              </span>
+            </button>
+          </Link>
         </div>
       </nav>
 
@@ -103,28 +105,23 @@ const Header = () => {
         } bg-black/90 text-white px-4`}
       >
         <ul className="space-y-4 text-lg mt-4 pb-4">
+          {navArr?.map((nav) => {
+            return (
+              <li key={nav.id}>
+                <Link href={nav.route} onClick={toggleMenu}>
+                  {nav.name}
+                </Link>
+              </li>
+            );
+          })}
           <li>
-            <Link href="#features" onClick={toggleMenu}>
-              Features
-            </Link>
-          </li>
-          <li>
-            <Link href="#pricing" onClick={toggleMenu}>
-              Pricing
-            </Link>
-          </li>
-          <li>
-            <Link href="#about" onClick={toggleMenu}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#get-started"
-              className="inline-block mt-2 bg-white text-black font-semibold px-5 py-2 rounded-full"
-              onClick={toggleMenu}
-            >
-              Get Started
+            <Link href="/contact-us">
+              <button className="relative inline-flex h-10 overflow-hidden rounded-full p-[1px] focus:outline-none">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00bba7_0%,#393BB2_50%,#7ccf00_100%)]" />
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-10 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                  Let’s Build Together
+                </span>
+              </button>
             </Link>
           </li>
         </ul>
